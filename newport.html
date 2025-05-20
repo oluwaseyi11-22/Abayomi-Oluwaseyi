@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My portfolio </title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5ace6b7feb.js" crossorigin="anonymous"></script>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+    body{
+        background-color: #2d3142;
+        font-family: "Poppins", sans-serif;
+
+    }
+    header{
+        background-color:#2d3142;
+        color: #bfc0c0;
+        display: flex;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    a{
+        text-decoration: none;
+        color: #bfc0c0;
+        
+    }
+    nav ul li{
+        margin-right: 20px;
+        display: inline;
+        
+    }
+    ul{
+        margin-left: 850px;
+        margin-top: 25px;
+    }
+
+    h1{
+        margin-left: 20px;
+        font-size: 30px;
+        color: #ef8354;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #bfc0c0;
+    }
+    .abt{
+        display: flex;
+        flex-direction: column;
+        align-items: last baseline;
+        justify-content: center;
+        height: 100vh;
+        background-color: #2d3142;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px;
+        max-width: 600px;
+    }
+    .abt img{
+        max-width: 600px;
+        height: 300px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+    .abtsec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        background-color: #2d3142;
+        color: #bfc0c0;
+    }
+    img{
+        max-width: 600px;
+        height: 300px;
+        
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+      
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+   h1{
+    justify-content: center;
+    text-align: center;
+   }
+
+   .htm{
+    background-color: #bfc0c0;
+    height: 400px;
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+    border-radius: 10px;
+    padding: 50px 16px;
+    margin-top: 50px;
+   }
+   .skillset{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between 40px;
+
+   }
+  .contactcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between 20px;
+    align-items: justify;
+    margin-top: 50px;
+    margin: 30px;
+    background-color: #f4f4f4;
+    width: 400px;
+
+  }
+  .crd{
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 20px;
+
+  
+  }
+  .material-symbols-outlined{
+    font-size: 50px;
+    color: #868f74;
+  }
+  i{
+    font-size: 80px;
+    color: black;
+    margin-top: 30px;
+  }
+.fa-solid{
+    font-size: 50px;
+    color: #2d3142;
+}
+  .fa-brands{
+    font-size: 50px;
+    color: #2d3142;
+  }
+  .fa-regular{
+    font-size: 50px;
+    color: #2d3142;
+  }
+  .work h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #868f74;
+}
+.work .contactcard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between 20px;
+    align-items: justify;
+    margin-top: 50px;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+    .contactform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        background-color: #f4f4f4;
+        width: 400px;
+        height: 400px;
+        border-radius: 8px;
+    }
+    .contactform input{
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #2d3142;
+    }
+    .contactform button{
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background-color: #2d3142;
+        color: white;
+        transition: all ease-out 300ms;
+    } 
+    .contactform button:hover{
+        background-color: #ffffff;
+        color: #2d3142;
+        border: 1px solid #ffffff;
+        transition: all ease-in 300ms;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    .work{
+      background-color:     #f4f4f4;
+    }
+html{
+    scroll-behavior: smooth;
+}
+footer{
+    background-color: #2d3142;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    
+    
+
+</style>
+<body>
+    <header>
+        <h1>ABAYOMI</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                 <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="area" >
+        <h1>Welcome to my portfolio</h1>
+        </div>
+<section class="abtsec">
+        <div class="abt"id="about">
+            <h1>About Me</h1>
+            <p>I am a web developer with a passion for creating beautiful and functional websites. I have experience in HTML, CSS, and JavaScript, and I am always eager to learn new technologies.</p>
+
+        </div>
+
+        <img src="WhatsApp_Image_2025-05-19_at_21.26.55_7f2e6c97-removebg-preview.png" alt="">
+    </section>
+
+    <section class="skills" id="skills">
+        <h1 class="h1">Skills</h1>
+        <div class="skillset">
+        <div class="htm">
+            <h2>HTML</h2>
+            <p>I have little experience with HTML.</p>
+                 <i class="fa-brands fa-html5"></i>
+                 
+        </div>
+        <div class="htm">
+            <h2>CSS</h2>
+            <p>I have little experience with CSS.</p>
+               <i class="fa-brands fa-css"></i>
+        </div>
+        <div class="htm">
+            <h2>JavaScript</h2>
+            <p>I have no experience with JavaScript.</p>
+                 <i class="fa-brands fa-js"></i>
+        </div>
+
+        </div>
+    </section>
+    <section id="contact" class="contact">
+         <h1>Contact Me</h1>
+         <div class="contactcard">
+            <div class="crd">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Abayomiseyi735@gmail.com</p>
+
+
+
+            </div>
+             <div class="crd">
+                <i class="fa-solid fa-phone"></i>
+                <p>+234 707 348 4787</p>
+                
+
+
+
+            </div>
+             <div class="crd">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Ikorodu Lagos</p>
+
+
+
+            </div>
+         </div>
+         <div class="work">
+
+             <div class="contactform">
+                <form action="https://formsubmit.co/abayomiseyi735@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="text" name="message" placeholder="Message" required>
+                  
+                   
+                    <button type="submit" >Send</button>
+                </form>
+             </div>
+
+         </div>
+
+
+    </section>
+    <footer>
+      <p>&copy; 2025 Abayomi. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
